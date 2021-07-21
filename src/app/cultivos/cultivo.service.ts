@@ -5,11 +5,11 @@ import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { map } from 'rxjs/operators';
 import { Cultivo } from './cultivo';
 
-
+import {URL_BACKEND} from '../config/config';
 @Injectable()
 export class CultivoService {
 
-  private urlEndPoint: string = 'http://localhost:8080/cultivation/cultivos';
+  private urlEndPoint: string = URL_BACKEND + 'cultivation/cultivos';
 
   private httpHeaders = new HttpHeaders({'Content-Type': 'application/json'})
 

@@ -14,15 +14,15 @@ export class FormComponent implements OnInit {
   lista:string[]=["Pimenton","Abichuela","Ahuyama", "Pepino", "Lulo"];
   cargo:string[]=["Administrador","Empleado"];
 
-  private trabajador: Trabajador = new Trabajador()
-  private cultivo: Cultivo = new Cultivo();
-  private titulo:string = "Crear Empleado"
+  public trabajador: Trabajador = new Trabajador()
+  public cultivo: Cultivo = new Cultivo();
+  public titulo:string = "Crear Empleado"
 
   seleccionado:number= 0;
   value:number= 0;
  
   constructor(private trabajadorService: TrabajadorService,
-    private router: Router,
+   private router: Router,
    private activatedRoute: ActivatedRoute) { }
 
   ngOnInit() {
@@ -40,16 +40,7 @@ export class FormComponent implements OnInit {
     console.log("Esto es lo que jue2222222 " + this.trabajador.cultivo)
     this.trabajador.cultivo=8;
   }
- //// else if(this.value=9){
- //   this.trabajador.cultivo=9;
- // }else if(this.value=10){
- //   this.trabajador.cultivo=10;
- // }else if(this.value=11){
- //   this.trabajador.cultivo=11;
- // }else if(this.value=12){
-  //  this.trabajador.cultivo=12;
- // }
-
+ 
   }
 
 

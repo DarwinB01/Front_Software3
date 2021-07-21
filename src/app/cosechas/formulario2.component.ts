@@ -12,8 +12,8 @@ import swal from 'sweetalert2'
 export class Formulario2Component implements OnInit {
   lista:string[]=["Pimenton","Abichuela","Ahuyama", "Pepino", "Lulo"];
 
-  private cosecha: Cosecha = new Cosecha()
-  private titulo:string = "Crear Cosecha";
+  public cosecha: Cosecha = new Cosecha()
+  public titulo:string = "Crear Cosecha";
   seleccionado:string= "";
   value:number= 0;
 

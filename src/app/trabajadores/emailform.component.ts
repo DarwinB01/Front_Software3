@@ -11,11 +11,11 @@ import { TrabajadorService } from './trabajador.service';
 })
 export class EmailformComponent implements OnInit {
 
-  private titulo:string = "Enviar Email";
-  private emailRequest: EmailRequest = new EmailRequest()
+  public titulo:string = "Enviar Email";
+  public emailRequest: EmailRequest = new EmailRequest()
 
   constructor(private trabajadorService: TrabajadorService,
-    private router: Router,
+   private router: Router,
    private activatedRoute: ActivatedRoute) { }
 
   ngOnInit() {

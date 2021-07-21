@@ -10,8 +10,8 @@ import swal from 'sweetalert2'
 })
 export class Formulario3Component implements OnInit {
 
-  private insumo:Insumo=new Insumo();
-  private titulo:string = "Crear Insumo";
+  public insumo:Insumo=new Insumo();
+  public titulo:string = "Crear Insumo";
 
   constructor(private insumoService:InsumoService,
     private router:Router,

@@ -7,11 +7,12 @@ import {Trabajador} from './trabajador';
 import {EmailRequest} from './emailRequest';
 //import {TRABAJADORES} from './trabajadores.json'
 
+import {URL_BACKEND} from '../config/config';
 @Injectable()
 export class TrabajadorService {
 
-  private urlEndPoint: string = 'http://localhost:8080/employee/trabajadores';
-  private urlEmail: string = 'http://localhost:8080/employee/trabajadores/email';
+  private urlEndPoint: string = URL_BACKEND + 'employee/trabajadores';
+  private urlEmail: string = URL_BACKEND + 'employee/trabajadores/email';
 
   private httpHeaders = new HttpHeaders({'Content-Type': 'application/json'})
 

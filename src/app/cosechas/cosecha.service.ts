@@ -5,10 +5,11 @@ import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { map } from 'rxjs/operators';
 import { Cosecha } from './cosecha';
 
+import {URL_BACKEND} from '../config/config';
 @Injectable()
 export class CosechaService {
 
-  private urlEndPoint: string = 'http://localhost:8080/harvest/cosechas';
+  private urlEndPoint: string = URL_BACKEND + 'harvest/cosechas';
 
   private httpHeaders = new HttpHeaders({'Content-Type': 'application/json'})
 

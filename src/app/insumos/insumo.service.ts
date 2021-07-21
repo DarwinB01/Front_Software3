@@ -5,10 +5,11 @@ import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { map } from 'rxjs/operators';
 import { Insumo } from './insumo';
 
+import {URL_BACKEND} from '../config/config';
 @Injectable()
 export class InsumoService {
 
-  private urlEndPoint: string = 'http://localhost:8080/insumo/insumos';
+  private urlEndPoint: string = URL_BACKEND + 'insumo/insumos';
 
   private httpHeaders = new HttpHeaders({'Content-Type': 'application/json'})
 

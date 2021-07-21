@@ -5,10 +5,11 @@ import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { map } from 'rxjs/operators';
 import { Control } from './control';
 
+import {URL_BACKEND} from '../config/config';
 @Injectable()
 export class ControlService {
 
-  private urlEndPoint: string = 'http://localhost:8080/control/controles';
+  private urlEndPoint: string = URL_BACKEND + 'control/controles';
 
   private httpHeaders = new HttpHeaders({'Content-Type': 'application/json'})
 

@@ -5,10 +5,11 @@ import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { map } from 'rxjs/operators';
 import {Auxiliar} from './auxiliar';
 
+import {URL_BACKEND} from '../config/config';
 @Injectable()
 export class AuxiliarService {
 
-  private urlEndPoint: string = 'http://localhost:8080/employeeHarvest/trabajadoresCosechas';
+  private urlEndPoint: string = URL_BACKEND + 'employeeHarvest/trabajadoresCosechas';
 
   private httpHeaders = new HttpHeaders({'Content-Type': 'application/json'})
 

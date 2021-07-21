@@ -12,8 +12,8 @@ import swal from 'sweetalert2'
 export class Formulario4Component implements OnInit {
   lista:string[]=["Pimenton","Abichuela","Ahuyama", "Pepino", "Lulo"];
 
-  private control:Control=new Control()
-  private titulo:string = "Crear Control"
+  public control:Control=new Control()
+  public titulo:string = "Crear Control"
   seleccionado:string= "";
   value:number= 0;
 

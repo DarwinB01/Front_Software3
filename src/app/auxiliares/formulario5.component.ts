@@ -11,8 +11,8 @@ import swal from 'sweetalert2'
 })
 export class Formulario5Component implements OnInit {
 
-  private auxiliar: Auxiliar=new Auxiliar()
-  private titulo:string = "Crear Auxiliar"
+  public auxiliar: Auxiliar=new Auxiliar()
+  public titulo:string = "Crear Auxiliar"
 
   constructor(private auxiliarService: AuxiliarService,
     private router: Router,

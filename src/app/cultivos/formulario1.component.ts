@@ -12,8 +12,8 @@ import swal from 'sweetalert2'
 
 export class Formulario1Component implements OnInit {
 
-  private cultivo: Cultivo = new Cultivo()
-  private titulo:string = "Crear Cultivo"
+  public cultivo: Cultivo = new Cultivo()
+  public titulo:string = "Crear Cultivo"
 
   constructor(private cultivoService: CultivoService,
     private router: Router,
